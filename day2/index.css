@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  background-color: dodgerblue;
+  padding: 20px;
+}
+.container > div {
+  background-color: #f1f1f1;
+  /* border: 1px solid black; */
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.mycontainer {
+  display: grid;
+  grid-template-columns: auto ;
+  background-color: red;
+  padding: 20px;
+}
+.mycontainer > div { 
+background-color: #f1f1f1;
+/* border: 1px solid black  */
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.containerCATS {
+
+display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: red; */
+  padding: 10px;
+     
+}
+.containerCATS > div { 
+/* background-color: #f1f1f1; */
+/* border: 1px solid black  */
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* This is a comment */
+/* this is for humans to read and undertand the code */
+/* it will not be comsidered as part of the code */

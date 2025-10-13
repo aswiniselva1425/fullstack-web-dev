@@ -1,0 +1,27 @@
+ table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            color:teal;
+            font-size: 30px;
+            padding-left: 20px;
+            margin-left: 40px;
+        
+        }
+        h1{
+            color:blue;
+            font-size: 20px;
+        }
+
+        .para{
+            color: purple
+        }
+        .myPara{
+
+            font-size: 36px;
+
+
+        }
+        .heading{
+            color:48px;
+            font-size: pink;
+        }
