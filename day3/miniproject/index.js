@@ -17,3 +17,19 @@ button.addEventListener("click", function () {
  
    result.textContent = `Tip: RM${tip.toFixed(2)} | Total: RM${total.toFixed(2)}`;
  });
+
+ billInput.onkeyup = () => {
+  if(billInput.value == "" && tipInput.value == ""){
+    button.disabled = false
+  }else{
+    button.disabled = true
+  }
+ }
+
+ tipInput.onkeyup = () => {
+  if(billInput.value == "" && tipInput.value == ""){
+    button.disabled = false
+  }else{
+    button.disabled = true
+  }
+ }
