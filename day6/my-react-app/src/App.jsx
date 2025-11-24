@@ -5,13 +5,14 @@ import './App.css'
 import Clicker from './Components/Clicker'
 import NameForm from './Components/NameForm'
 import LoginForm from './Components/LoginForm'
+import UserCard from './Components/UserCard'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-<LoginForm/>
+<UserCard/>
     </>
     
   )
