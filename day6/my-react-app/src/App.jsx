@@ -6,13 +6,14 @@ import Clicker from './Components/Clicker'
 import NameForm from './Components/NameForm'
 import LoginForm from './Components/LoginForm'
 import UserCard from './Components/UserCard'
+import QuoteLoader from './Components/QuoteLoader'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-   <UserCard/>
+   <QuoteLoader/>
     </>
     
   )
