@@ -1,4 +1,28 @@
- import { useState } from "react";
+ 
+//  Build a Task Manager Single Page Application (SPA) where users can:
+
+// View a list of tasks
+
+// Add new tasks
+
+// Mark tasks as complete
+
+// Remove tasks
+
+// Navigate between Home and Tasks pages
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+import { useState } from "react";
 
 function TaskManager() {
   const [tasks, setTasks] = useState([]);
@@ -59,3 +83,10 @@ function TaskManager() {
 }
 
 export default TaskManager;
+
+
+
+
+
+
+
