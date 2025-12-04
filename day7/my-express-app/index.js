@@ -3,6 +3,13 @@ const app = express();
 
 app.use(express.json());
 
+function logger(req, res, next) {
+  console.log("LOGGER ACTIVATED");
+  console.log(`Aswini'dad: ${req.method} ${req.url}`);
+  next(); // continue to the route handler
+}
+
+app.use(logger);
 
 app.get("/", (req, res) => {
   res.send("Welcome to my API!");
@@ -21,15 +28,13 @@ app.get("/me", (req, res) => {
 });
 
 app.get("/hobbies", (req, res) => {
-  res.json(["running", "reading"]);
+  res.json(["swimming", "reading"]);
 });
-
 
 app.get("/user/:id", (req, res) => {
   const userId = req.params.id;
   res.send(`User ID: ${userId}`);
 });
-
 
 app.post("/submit", (req, res) => {
   res.send("Form submitted");
@@ -40,7 +45,7 @@ app.post("/message", (req, res) => {
   res.send(`You said: ${message}`);
 });
 
-
 app.listen(3000, () => {
   console.log("Server is running on http://localhost:3000");
 });
+
